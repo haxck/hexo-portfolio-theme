@@ -1,0 +1,20 @@
+.pf {
+  max-width: 600px;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+footer {
+  padding: 6px;
+  background: #f8f7f8;
+}
+
+footer p {
+  margin: 0;
+}
+

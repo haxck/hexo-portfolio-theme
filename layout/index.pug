@@ -1,0 +1,16 @@
+html(lang=config.language)
+  include ./partial/header
+  body
+    .main
+      include ./partial/nav
+      div.container.mt-5
+        .pf
+          if site.posts.length > 0
+            each post in site.posts.data
+              a(href=post.path)
+                .card.mt-5 
+                  img.card-img-top(src=post.cover_image, alt="", srcset="")
+                  .card-body=post.title
+                  
+  include ./partial/footer
+

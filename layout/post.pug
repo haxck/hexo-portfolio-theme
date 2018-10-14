@@ -1,0 +1,14 @@
+include ./partial/header
+include ./partial/nav
+
+div.container
+  article.pf.mt-5
+    h1 #{page.title} 
+    p
+      sub
+        i=full_date(page.date,"lll") + " ~ " 
+          !=moment(page.date).startOf('day').fromNow()
+    br
+    !=page.content
+
+include ./partial/footer
